@@ -1,0 +1,84 @@
+{
+  "visa_10.4": {
+    "name": "Other Fraud, Card Absent",
+    "mode": "any",
+    "count_required": 2,
+    "requirements": [
+      "2+ prior undisputed transactions same card/address in last 12 months",
+      "Proof of cardholder identity/device consistency",
+      "Signed delivery to verified billing address"
+    ]
+  },
+  "visa_10.5": {
+    "name": "Visa Fraud Monitoring",
+    "note": "⚠️ RARELY REPRESENTABLE — Accept Liability unless issuer error",
+    "requirements": ["Only defend if issuer admits miscoding"]
+  },
+  "visa_12.6.1": {
+    "name": "Duplicate Processing",
+    "mode": "all",
+    "requirements": [
+      "Separate Order IDs/items/dates prove distinct purchases",
+      "Independent invoices/delivery records exist",
+      "Unique authorization codes/timestamps for each"
+    ]
+  },
+  "visa_13.1": {
+    "name": "Merchandise/Services Not Received",
+    "mode": "all",
+    "requirements": [
+      "Valid tracking + carrier + confirmed delivery status",
+      "Delivery date BEFORE chargeback date",
+      "Address matches purchase/shipping records"
+    ]
+  },
+  "visa_13.2": {
+    "name": "Cancelled Recurring Transaction",
+    "mode": "all",
+    "requirements": [
+      "Published terms: recurring nature + clear cancel method",
+      "Billing notification sent minimum 5 days before renewal",
+      "No cancellation request received BEFORE charge date",
+      "Proof of original opt-in/consent"
+    ]
+  },
+  "visa_13.3": {
+    "name": "Merchandise/Services Not As Described",
+    "mode": "all",
+    "requirements": [
+      "Original published product/service description at purchase",
+      "Evidence delivered item matches description",
+      "Return/refund policy clearly offered"
+    ]
+  },
+  "mastercard_4837": {
+    "name": "No Cardholder Authorisation",
+    "mode": "any",
+    "count_required": 2,
+    "requirements": [
+      "Full AVS address match + valid CVV result",
+      "Successful 3D Secure authentication",
+      "2+ prior undisputed transactions within 12 months",
+      "Proof of delivery to verified billing address"
+    ]
+  },
+  "mastercard_4855": {
+    "name": "Goods/Services Not Provided",
+    "mode": "all",
+    "requirements": [
+      "Tracking/carrier confirmation OR service proof records",
+      "Fulfillment date strictly BEFORE chargeback date",
+      "Consistent address details across purchase/delivery"
+    ]
+  },
+  "mastercard_4859": {
+    "name": "No‑Show / Cancellation",
+    "mode": "all",
+    "requirements": [
+      "Valid booking/reservation confirmation document",
+      "Policy (non‑refund/cancel) DISCLOSED + ACCEPTED at booking",
+      "Proof of no‑show OR cancellation outside allowed window",
+      "Charged amount matches published policy exactly"
+    ]
+  }
+}

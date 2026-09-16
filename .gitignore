@@ -1,0 +1,8 @@
+﻿.env
+.env.*
+__pycache__/
+.agents/
+.copilot/
+.vscode/
+.idea/
+*.log
