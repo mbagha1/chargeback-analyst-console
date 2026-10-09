@@ -81,7 +81,7 @@ div[data-testid="stProgress"] > div > div {
     border-radius: 4px;
 }
 .stButton > button {
-    background-color: #0070F3;
+    background-color: #D64545;
     color: #FFFFFF;
     border: none;
     border-radius: 6px;
